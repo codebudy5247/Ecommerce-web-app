@@ -1,0 +1,80 @@
+main {
+  min-height: 80vh;
+}
+
+h3 {
+  padding: 1rem 0;
+}
+
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+h2 {
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+}
+
+.rating span {
+  margin: 0.1rem;
+}
+
+/* carousel */
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: flex;
+}
+.carousel-caption {
+  position: absolute;
+  top: 0;
+}
+
+.carousel-caption h2 {
+  color: #fff;
+}
+
+.carousel img {
+  height: 300px;
+  width: auto;
+  padding: 30px;
+  margin: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.carousel a {
+  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .carousel-caption h2 {
+    font-size: 2.5vw;
+  }
+}
+
+
+/* Loader*/
+.loading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading svg{
+  font-size: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  animation: text 1s ease-in-out infinite;
+}
+@keyframes text{
+  50%{ opacity: 0.1 }
+}
+.loading polygon{
+  stroke-dasharray: 22;
+  stroke-dashoffset: 1;
+  animation: dash 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) 
+  infinite alternate-reverse;
+}
+@keyframes dash{
+  to {stroke-dashoffset: 234;}
+}
